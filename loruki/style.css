@@ -1,0 +1,358 @@
+:root {
+  --primary-color: #444;
+  --secondary-color:#e26161;
+  --overlay-color:rgba(109, 109, 109, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1,6;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  margin: 20px 5px;
+}
+
+.navbar .logo .headphones {
+  position: relative;
+  width: 30px;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.navbar .nav {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav a {
+  padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+  color: var(--secondary-color);
+}
+
+.section1 {
+  margin: 2rem 0;
+}
+
+.section1 .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.section1 p {
+  margin: 1rem 0;
+}
+
+.button {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.button:hover {
+  color: #fff;
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+}
+
+.button {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.section2 {
+  margin: 5rem 0;
+  width: 100%;
+}
+
+.section2 .container {
+  position: relative;
+  background-color: var(--primary-color);
+  opacity: 0.6;
+  color: #fff;
+  padding: 3rem 2rem 3rem 4rem;
+  border-radius: 20px;
+}
+
+.section2 .container img {
+  position: absolute;
+  width: 20px;
+}
+
+.section2 .container .quote1 {
+  top: 40px;
+  left: 40px;
+}
+
+.section2 .container .quote2 {
+  bottom: 40px;
+  right: 40px;
+  transform: rotate(180deg);
+}
+
+.section3-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 3rem;
+}
+
+.section3-inner h3 {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.section3-inner h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.section3-inner p {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  height: 860px;
+  width: 100%;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay-color);
+}
+
+.parallax-image {
+  background-image: url('images/woman.jpg');
+  min-height: 860px;
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 0;
+  height: 860px;
+  width: 100%;
+}
+
+.section4 {
+  margin: 5rem 0;
+}
+
+.section4 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.section4 p {
+  margin: 1rem 0;
+}
+
+.button2 {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  margin-left: 45%;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.button2:hover {
+  color: #fff;
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+}
+
+.section-footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.section-footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+.section-footer h2 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-footer h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.section-footer a {
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1.8;
+  color: rgb(221, 221, 221);
+}
+
+.section-footer a > i {
+  color: #878787;
+  margin-right: 1rem;
+}
+
+.section-footer a > i:hover {
+  color: #b34d4d;
+}
+
+.section-footer a:hover {
+  color: var(--secondary-color);
+}
+
+.section-footer table {
+  width: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+  border-radius: 5px;
+}
+
+.section-footer table th, .section-footer table td {
+  padding: 6px;
+  text-align: left;
+}
+
+
+.section-footer p {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.email-form {
+  width: 100%;
+  display: inline-block;
+  background-color: #555;
+  position: relative;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.email-form .form-control {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  font-size: 0.9rem;
+  color: rgb(218, 218, 218);
+  background-color: transparent;
+  padding: 0 3rem 0 1.5rem;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+}
+.email-form ::placeholder {
+  color: rgb(155, 155, 155);
+}
+
+.email-form .submit {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color: rgb(218, 218, 218);
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+.email-form .submit:hover {
+  color: var(--secondary-color);
+}
