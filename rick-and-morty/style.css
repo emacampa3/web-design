@@ -29,6 +29,9 @@
 
 .rick-container {
   width: 300px;
+  margin-top: 120px;
+  margin-right: 60px;
+  margin-left: 80px;
 }
 
 .rick-container .head-container {
@@ -123,7 +126,8 @@
   border-bottom: 3px solid var(--border-color);
   position: relative;
   z-index: 4;
-  animation: closeEyes 2s linear infinite alternate;
+  animation: closeEyes 1.5s linear infinite alternate;
+  animation-delay: 0.5s;
 }
 
 .rick-container .head-container .head .eyes-container .eye .pupil {
@@ -470,7 +474,8 @@ height: 40px;
   border-bottom: 3px solid var(--border-color);
   position: relative;
   z-index: 4;
-  animation: closeEyes 2s linear infinite alternate;
+  animation: closeEyes 1.3s linear infinite alternate;
+  animation-delay: 1s;
 }
 
 .morty-container .head-container .head .eyes-container .eye .pupil {
