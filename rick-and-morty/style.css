@@ -84,7 +84,7 @@
   content: "";
   display: block;
   width: 80%;
-  height: 3px;
+  height: 2px;
   border-radius: 50px;
   background: var(--border-color);
 }
@@ -421,29 +421,29 @@ height: 40px;
 
 .morty-container .head-container .head .brows-container {
   position: absolute;
-  width: 100%;
+  margin-top: 24px;
+  width: 84%;
   height: 20px;
   display: flex;
   justify-content: space-around;
 }
 
 .morty-container .head-container .head .brows-container .brow {
-  width: 40px;
-  height: 35px;
+  width: 25px;
+  height: 8px;
   border: 3px solid var(--border-color);
-  border-radius: 30%;
+  border-radius: 40%;
   border-left: 0;
   border-bottom: 0;
   border-right: 0;
-  transform: translate(0, 25px);
 }
 
 .morty-container .head-container .head .brows-container .brow.left {
-  border-top-right-radius: 0;
+  border-top-right-radius: 15%;
 }
 
 .morty-container .head-container .head .brows-container .brow.right {
-  border-top-left-radius: 0;
+  border-top-left-radius: 15%;
 }
 
 .morty-container .head-container .head .eyes-container {
@@ -508,7 +508,7 @@ height: 40px;
 
 .morty-container .head-container .head .nose {
   position: absolute;
-  border: 3px solid var(--border-color);
+  border: 2px solid var(--border-color);
   width: 8px;
   height: 12px;
   border-top: 0;
@@ -518,7 +518,7 @@ height: 40px;
 
 .morty-container .head-container .head .mouth-container {
   position: absolute;
-  border-left: 3px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
   width: 6px;
   height: 12px;
   transform: translate(-5px, 105px);
@@ -529,19 +529,19 @@ height: 40px;
   position: absolute;
   content: "";
   display: block;
-  border: 3px solid var(--border-color);
+  border: 2px solid var(--border-color);
   width: 6px;
   height: 11px;
   border-top: 0;
   border-radius: 0 0 25px 25px;
-  transform: translate(-3px, 4px);
+  transform: translate(-2px, 4px);
 }
 
 .morty-container .head-container .head .mouth-container .mouth::after {
   width: 6px;
   height: 10px;
   border-left: 0;
-  transform: translate(7px, -2px);
+  transform: translate(6px, -2px);
 }
 
 .morty-container .head-container .ear-container {
