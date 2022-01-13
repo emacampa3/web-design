@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(165deg, #527785 0%, #7fb4c7 100%);
+  background: linear-gradient(165deg, #345a68 0%, #577985 100%);
 }
 
 .cloud-circle-1 {
@@ -12,7 +12,7 @@ body {
   height: 275px;
   border-radius: 50%;
   filter: url(#filter);
-  box-shadow: 400px 400px 200px 0px #bdd7dde3;
+  box-shadow: 400px 400px 200px 0px #d2dadce3;
 }
 
 .cloud-circle-2 {
