@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Clouds</title>
+</head>
+<body>
+  <div class="cloud-circle-1"></div>
+  <div class="cloud-circle-2"></div>
+  <div class="cloud-circle-3"></div>
+  <div class="cloud-circle-4"></div>
+  <div class="cloud-circle-5"></div>
+  <div class="cloud-circle-6"></div>
+  <div class="cloud-circle-7"></div>
+  <div class="cloud-circle-8"></div>
+  <svg width="0" height="0">
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
+      <feDisplacementMap in="SourceGraphic" scale="180" />
+    </filter>
+  </svg>
+</body>
+</html>
