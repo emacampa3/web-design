@@ -1,0 +1,46 @@
+.pencil, body::before {
+  width: 475px;
+  height: 28px;
+  clip-path: polygon(50px 0, 0 50%, 50px 100%, calc(100% - 5px) 100%, 100% calc(100% - 8px), 100% 8px, calc(100% - 5px) 0);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a76e59;
+}
+body::before {
+  content: "";
+  position: relative;
+  top: 8px;
+  left: 5px;
+  background-color: #835443;
+}
+
+.pencil {
+  position: absolute;
+  background: linear-gradient(#6e8283 8px, #4f5f60 8px, #4f5f60 calc(100% - 8px), #000100 calc(100% - 8px));
+}
+.pencil::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: inherit;
+  background-color: #cd9480;
+  clip-path: inherit;
+}
+.pencil::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #000100;
+}
