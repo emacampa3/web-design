@@ -1,0 +1,264 @@
+body {
+  background-color: #94c0e9;
+}
+
+body .sailor {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.sailor {
+  position: relative;
+  overflow: hidden;
+  width: 40em;
+  height: 40em;
+}
+
+.sailor-head {
+  position: absolute;
+  top: 50%;
+  width: 13.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sailor-hair {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3.125em;
+  width: 3.125em;
+  border-radius: 50%;
+  color: #492B1C;
+  top: -3.125em;
+  box-shadow: -6.5em 7.188em, -6.875em 5.938em, -7.5em 4.375em, -7.813em 2.5em, -7.813em 0.625em, -7.188em -1.563em, -5.938em -3.438em, -4.063em -4.688em, -2.188em -5.313em, 0 -5.625em, 6.5em 7.188em, 6.875em 5.938em, 7.5em 4.375em, 7.813em 2.5em, 7.813em 0.625em, 7.188em -1.563em, 5.938em -3.438em, 4.063em -4.688em, 2.188em -5.313em;
+  z-index: -3;
+}
+
+.sailor-hair::after, .sailor-hair::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+}
+
+.sailor-hair::after {
+  height: 14em;
+  width: 14em;
+  border-radius: 50%;
+  background-color: #492B1C;
+  top: -105%;
+}
+
+.sailor-cap {
+  position: absolute;
+  top: -10em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16em;
+  height: 8em;
+  background-color: #8c5a41;
+  border-radius: 48% 52% 52% 48% / 100% 100% 15% 16%;  
+}
+
+.sailor-cap:before {
+  content: '';
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18em;
+  height: 5em;
+  background-color: #b87350;
+  border-radius: 48% 52% 52% 48% / 60% 55% 15% 16%;
+}
+
+.sailor-bangs {
+  position: absolute;
+  top: -0.9em;
+  left: 50%;
+  height: 1.563em;
+  width: 3.125em;
+  transform: translateX(-50%);
+  color: #492B1C;
+  background-color: currentColor;
+  border-radius: 0 0 1.563em 1.563em;
+  box-shadow: -1.563em -0.25em, -3.125em -0.5em, 1.563em -0.25em, 3.125em -0.5em, -1.563em 0.063em #dfa784, -2.875em 0.063em 0 -0.313em #dfa784, 0 0.313em #dfa784, 1.563em 0.063em #dfa784, 2.875em 0.063em 0 -0.313em #dfa784;
+  z-index: 2;
+}
+
+.sailor-beard {
+  position: absolute;
+  left: 50%;
+  width: 13.5em;
+  height: 18.25em;
+  transform: translateX(-50%);
+  background-color: #492B1C;
+  border-radius: 0 0 13.5em 13.5em;
+  box-shadow: 0 1.3em 0 -0.8em #dfa784;
+}
+
+.sailor-beard-patterns span {
+  background-color: #5c3c2c;
+  position: absolute;
+  height: 100%;
+}
+
+.sailor-beard-patterns span:nth-child(1) {
+  top: 5.6em;
+  left: 2.6em;
+  width: 1.5em;
+  height: 0.8em;
+  border-radius: 0.8em;
+}
+
+.sailor-beard-patterns span:nth-child(2) {
+  top: 8em;
+  left: 1.4em;
+  width: 1em;
+  height: 2em;
+  border-radius: 2em;
+}
+
+.sailor-beard-patterns span:nth-child(3) {
+  bottom: 3em;
+  left: 4em;
+  width: 0.8em;
+  height: 4.5em;
+  border-radius: 4.5em;
+}
+
+.sailor-beard-patterns span:nth-child(4) {
+  bottom: 6em;
+  left: 6.5em;
+  width: 1em;
+  height: 2.5em;
+  border-radius: 2.5em;
+}
+
+.sailor-beard-patterns span:nth-child(5) {
+  bottom: 2.5em;
+  right: 4em;
+  width: 1em;
+  height: 3em;
+  border-radius: 3em;
+}
+
+.sailor-beard-patterns span:nth-child(6) {
+  bottom: 6em;
+  right: 1em;
+  width: 0.6em;
+  height: 1.7em;
+  border-radius: 1.7em;
+}
+/*
+.sailor-mustache {
+  width: 50px;
+  height: 50px;
+  left: 4em;
+  top: 3.6em;
+  border-radius: 50%;
+  position: absolute;
+  color: black;
+  box-shadow: 0px 24px 0 0,
+              40px 24px 0 0;
+}
+
+ .sailor-mustache::before{
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 30px;
+  height: 20px;
+  border-bottom: solid 50px;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-40deg);
+} 
+
+.sailor-mustache::after{
+  content: " ";
+  position: absolute;
+  left: 70px;
+  top: -10px;
+  width: 50px;
+  height: 54px;
+  border-bottom: solid 50px;
+  border-radius: 0 0  100% 0;
+  transform: rotate(40deg);
+} */
+
+.sailor-face {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12em;
+  height: 4.5em;
+  border-radius: 2.5em ;
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: #f8c09d;
+  z-index: 1;
+}
+
+.sailor-face::after {
+  content: "";
+  position: absolute;
+  bottom: -1.3em;
+  height: 1.3em;
+  width: 3.3em;
+  border-radius: 0 0 1.3em 1.3em;
+  background-color: inherit;
+}
+
+.sailor-face::before {
+  content: "";
+  position: absolute;
+  bottom: -0.4em;
+  right: 50%;
+  width: 0.8em;
+  height: 1.3em;
+  border-radius: 0.8em;
+  background-color: #f3cfb8;
+  z-index: 1;
+}
+
+.sailor-eye {
+  position: relative;
+  margin-top: 1em;
+  left: 0.4em;
+  width: 4.6em;
+  height: 2em;
+  border-radius: 2em;
+  background-color: #492B1C;
+  box-shadow: 0 1em 0 -0.5em #dfa784;
+}
+
+.sailor-eye::after {
+  content: "";
+  position: absolute;
+  left: 0.7em;
+  top: 0.2em;
+  width: 2em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: #5c3c2c;
+}
+
+.sailor-eye::before {
+  content: "";
+  position: absolute;
+  bottom: -0.8em;
+  right: 1.4em;
+  height: 1em;
+  width: 0.7em;
+  border-radius: 0.7em;
+  background-color: #191b1d;
+}
+
+.sailor-eye-right {
+  transform: scaleX(-1);
+}

@@ -259,6 +259,7 @@ body .caveman {
   background-color: #002337;
   box-shadow: 0 1em 0 -0.5em #ef937e;
 }
+
 .caveman-eye::after {
   content: "";
   position: absolute;
@@ -269,6 +270,7 @@ body .caveman {
   border-radius: 1em;
   background-color: #364d5b;
 }
+
 .caveman-eye::before {
   content: "";
   position: absolute;
