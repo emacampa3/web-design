@@ -64,101 +64,53 @@ body .caveman {
 
 .caveman-bone-base:nth-child(1) {
   position: absolute;
-  width: 3.3em;
-  height: 1.65em;
+  width: 3.5em;
+  height: 1.5em;
   border-radius: 1.65em 0 0 1.65em;
   background-color: #cddee6;
   background-image: linear-gradient(transparent 50%, #93c1d8 50%);
   z-index: 1;
   transform: rotate(-50deg);
-  right: -4.7em;
-  top: -3.3em;
+  right: -5em;
+  top: -3em;
 }
 
 .caveman-bone-base:nth-child(1)::after {
-  height: 1.65em;
-  width: 1.65em;
-  border-radius: 50%;
   content: "";
   position: absolute;
-  background-color: #002337;
-}
-.caveman-bone-base:nth-child(1)::before {
-  height: 1.65em;
-  width: 1.65em;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  right: 0;
-  background-color: #93c1d8;
-}
-.caveman-bone-base:nth-child(1)::after {
   left: -0.5em;
   bottom: -0.5em;
-}
-.caveman-bone-base:nth-child(1) .caveman-bone-joint {
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 50%;
-}
-.caveman-bone-base:nth-child(1) .caveman-bone-joint:nth-of-type(1) {
-  top: -0.9em;
-}
-.caveman-bone-base:nth-child(1) .caveman-bone-joint:nth-of-type(2) {
-  bottom: -0.9em;
-}
-.caveman-bone-base:nth-child(2) {
-  position: absolute;
-  width: 2em;
-  height: 1.3em;
-  border-radius: 1.3em 0 0 1.3em;
-  background-color: #cddee6;
-  background-image: linear-gradient(transparent 50%, #93c1d8 50%);
-  z-index: 1;
-  transform: rotate(-135deg);
-  left: -4.5em;
-  top: -1em;
-}
-.caveman-bone-base:nth-child(2)::after {
-  height: 1.3em;
-  width: 1.3em;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
   background-color: #002337;
-}
-.caveman-bone-base:nth-child(2)::before {
-  height: 1.3em;
-  width: 1.3em;
   border-radius: 50%;
+}
+
+.caveman-bone-base:nth-child(1)::before {
   content: "";
   position: absolute;
   right: 0;
+  height: 1.5em;
+  width: 1.5em;
   background-color: #93c1d8;
-}
-.caveman-bone-base:nth-child(2)::after {
-  height: 2em;
-  width: 2em;
   border-radius: 50%;
-  left: -1.25em;
-  bottom: -0.375em;
 }
 
 .caveman-bone-joint {
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
-  background-color: #ccdde5;
   position: absolute;
   right: -1em;
+  height: 2em;
+  width: 2em;
+  background-color: #ccdde5;
+  border-radius: 50%;
   box-shadow: inset 0.5em -0.25em #bcd8e6;
 }
 
 .caveman-bone-joint::after {
   content: "";
+  position: absolute;
   background-color: #fff;
   border-radius: inherit;
-  position: absolute;
 }
 
 .caveman-bone-joint:nth-of-type(1) {
@@ -166,10 +118,10 @@ body .caveman {
 }
 
 .caveman-bone-joint:nth-of-type(1)::after {
+  top: 15%;
+  right: 10%;
   height: 40%;
   width: 40%;
-  right: 10%;
-  top: 15%;
 }
 
 .caveman-bone-joint:nth-of-type(2) {
@@ -177,22 +129,22 @@ body .caveman {
 }
 
 .caveman-bone-joint:nth-of-type(2)::after {
+  top: 30%;
+  right: 10%;
   height: 20%;
   width: 20%;
-  right: 10%;
-  top: 30%;
 }
 
 .caveman-bangs {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   top: -0.75em;
-  color: #002337;
+  left: 50%;
   height: 1.563em;
   width: 3.125em;
-  border-radius: 0 0 1.563em 1.563em;
+  transform: translateX(-50%);
+  color: #002337;
   background-color: currentColor;
+  border-radius: 0 0 1.563em 1.563em;
   box-shadow: -1.563em -0.25em, -3.125em -0.5em, 1.563em -0.25em, 3.125em -0.5em, -1.563em 0.063em #ef937e, -2.875em 0.063em 0 -0.313em #ef937e, 0 0.313em #ef937e, 1.563em 0.063em #ef937e, 2.875em 0.063em 0 -0.313em #ef937e;
   z-index: 2;
 }
@@ -200,70 +152,73 @@ body .caveman {
 .caveman-beard {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   width: 13.5em;
   height: 18.25em;
-  border-radius: 0 0 13.5em 13.5em;
+  transform: translateX(-50%);
   background-color: #002337;
+  border-radius: 0 0 13.5em 13.5em;
   box-shadow: 0 1.3em 0 -0.8em #ed8578;
 }
 
-.caveman-beardPatterns {
-  height: 100%;
-  position: relative;
-}
-.caveman-beardPatterns span {
+.caveman-beard-patterns span {
   background-color: #364d5b;
   position: absolute;
+  height: 100%;
 }
-.caveman-beardPatterns span:nth-child(1) {
-  width: 1.563em;
-  height: 0.813em;
-  border-radius: 0.813em;
-  left: 2.688em;
-  top: 5.625em;
+
+.caveman-beard-patterns span:nth-child(1) {
+  top: 5.6em;
+  left: 2.6em;
+  width: 1.5em;
+  height: 0.8em;
+  border-radius: 0.8em;
 }
-.caveman-beardPatterns span:nth-child(2) {
-  width: 1.063em;
-  height: 2.25em;
-  border-radius: 2.25em;
-  left: 1.438em;
-  top: 9.063em;
+
+.caveman-beard-patterns span:nth-child(2) {
+  top: 9em;
+  left: 1.4em;
+  width: 1em;
+  height: 2em;
+  border-radius: 2em;
 }
-.caveman__beardPatterns span:nth-child(3) {
-  width: 0.813em;
-  height: 4.438em;
-  border-radius: 4.438em;
-  left: 3.938em;
-  bottom: 3.25em;
+
+.caveman-beard-patterns span:nth-child(3) {
+  bottom: 3em;
+  left: 4em;
+  width: 0.8em;
+  height: 4.5em;
+  border-radius: 4.5em;
 }
-.caveman-beardPatterns span:nth-child(4) {
-  width: 1.125em;
-  height: 2.625em;
-  border-radius: 2.625em;
+
+.caveman-beard-patterns span:nth-child(4) {
+  bottom: 6em;
   left: 6.5em;
-  bottom: 5.938em;
+  width: 1em;
+  height: 2.5em;
+  border-radius: 2.5em;
 }
-.caveman-beardPatterns span:nth-child(5) {
-  width: 1.063em;
-  height: 2.563em;
-  border-radius: 2.563em;
-  right: 3.938em;
+
+.caveman-beard-patterns span:nth-child(5) {
   bottom: 2.5em;
+  right: 4em;
+  width: 1em;
+  height: 3em;
+  border-radius: 3em;
 }
-.caveman-beardPatterns span:nth-child(6) {
-  width: 0.688em;
-  height: 1.75em;
-  border-radius: 1.75em;
-  right: 1.313em;
-  bottom: 6.375em;
+
+.caveman-beard-patterns span:nth-child(6) {
+  bottom: 6em;
+  right: 1em;
+  width: 0.6em;
+  height: 1.7em;
+  border-radius: 1.7em;
 }
 
 .caveman-face {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 12.125em;
+  width: 12em;
   height: 4.5em;
   border-radius: 4.5em;
   display: flex;
@@ -272,42 +227,44 @@ body .caveman {
   background-color: #f8c09d;
   z-index: 1;
 }
+
 .caveman-face::after {
   content: "";
   position: absolute;
   bottom: -1.3em;
-  height: 1.375em;
-  width: 3.375em;
-  border-radius: 0 0 1.375em 1.375em;
+  height: 1.3em;
+  width: 3.3em;
+  border-radius: 0 0 1.3em 1.3em;
   background-color: inherit;
 }
+
 .caveman-face::before {
   content: "";
   position: absolute;
-  bottom: -0.438em;
+  bottom: -0.4em;
   right: 50%;
-  width: 0.875em;
-  height: 1.375em;
-  border-radius: 0.875em;
+  width: 0.8em;
+  height: 1.3em;
+  border-radius: 0.8em;
   background-color: #ffe6d2;
   z-index: 1;
 }
 
 .caveman-eye {
   position: relative;
-  margin-top: 0.938em;
-  width: 4.688em;
-  height: 2.063em;
-  border-radius: 2.063em;
+  margin-top: 1em;
+  width: 4.6em;
+  height: 2em;
+  border-radius: 2em;
   background-color: #002337;
   box-shadow: 0 1em 0 -0.5em #ef937e;
 }
 .caveman-eye::after {
   content: "";
   position: absolute;
-  left: 0.75em;
-  top: 0.25em;
-  width: 2.063em;
+  left: 0.7em;
+  top: 0.2em;
+  width: 2em;
   height: 1em;
   border-radius: 1em;
   background-color: #364d5b;
@@ -315,11 +272,11 @@ body .caveman {
 .caveman-eye::before {
   content: "";
   position: absolute;
-  bottom: calc(-1.063em - 0.063em);
-  right: 1.438em;
-  height: 1.063em;
-  width: 0.75em;
-  border-radius: 0.75em;
+  bottom: -0.8em;
+  right: 1.4em;
+  height: 1em;
+  width: 0.7em;
+  border-radius: 0.7em;
   background-color: #002337;
 }
 
@@ -329,22 +286,24 @@ body .caveman {
 
 .caveman-lips {
   width: 9em;
-  height: 1.625em;
-  border-radius: 1.625em;
+  height: 1.6em;
+  border-radius: 1.6em;
   position: absolute;
-  top: 7.313em;
+  top: 7em;
   background-color: #ea676c;
 }
+
 .caveman-lips::after {
   content: "";
-  width: 5.125em;
+  width: 5em;
   height: 0.5em;
   border-radius: 0.5em;
   position: absolute;
-  left: 0.625em;
-  top: 0.313em;
+  left: 0.6em;
+  top: 0.3em;
   background-color: #ef937e;
 }
+
 .caveman-lips::before {
   content: "";
   position: absolute;
@@ -366,6 +325,7 @@ body .caveman {
   background-color: #f8c09d;
   box-shadow: inset 0 -0.8em #ef937e;
 }
+
 .caveman-ear::after, .caveman-ear::before {
   width: 1.375em;
   height: 0.625em;
@@ -376,9 +336,11 @@ body .caveman {
   top: 25%;
   right: 8%;
 }
+
 .caveman-ear::before {
   transform: rotate(45deg);
 }
+
 .caveman-ear::after {
   transform: rotate(-45deg);
 }
@@ -392,12 +354,12 @@ body .caveman {
 .caveman-neck {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   bottom: -20em;
-  width: 14.625em;
+  transform: translateX(-50%);
+  width: 14em;
   height: 15em;
   background-color: #ef937e;
-  border-radius: 0 0 14.625em 14.625em;
+  border-radius: 0 0 14em 14em;
   z-index: -1;
 }
 
@@ -406,29 +368,31 @@ body .caveman {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 34.625em;
-  height: 7.875em;
-  border-radius: 7.875em 7.875em 0 0;
+  width: 34em;
+  height: 8em;
+  border-radius: 8em 8em 0 0;
   background-color: #f8c09d;
   z-index: -1;
 }
+
 .caveman-body::after {
   content: "";
-  height: 1.813em;
-  width: 1.813em;
+  height: 2em;
+  width: 2em;
   border-radius: 50%;
   position: absolute;
   bottom: 10%;
   right: 25%;
   color: #ef937e;
   background-color: currentColor;
-  box-shadow: -5em 0.5em 0 -0.1em, -2.7em 0.7em 0 -0.6em, -2em -0.6em 0 -0.4em, 2em -0.6em 0 -0.3em;
+  box-shadow: -5em 0.5em 0 -0.1em, -3em 0.5em 0 -0.5em, -2em -0.5em 0 -0.5em, 2em -0.5em 0 -0.5em;
 }
+
 .caveman-body::before {
   content: "";
   width: 4em;
-  height: 1.813em;
-  border-radius: 1.813em;
+  height: 2em;
+  border-radius: 2em;
   position: absolute;
   right: 15%;
   top: 15%;
@@ -441,21 +405,22 @@ body .caveman {
   transform: translateX(-50%);
   bottom: 0;
   width: 100%;
-  height: 7.438em;
-  border-radius: 7.438em 7.438em 0 0;
+  height: 7em;
+  border-radius: 7em 7em 0 0;
   background-color: #ef937e;
   z-index: -2;
 }
+
 .caveman-muscle::after {
   content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -10%;
-  width: 16.813em;
-  height: 8.406em;
+  width: 17em;
+  height: 8em;
   color: #ee7f76;
-  border-radius: 8.406em 8.406em 0 0;
+  border-radius: 8em 8em 0 0;
   box-shadow: -3em -3em, 3em -3em;
 }
 
@@ -464,55 +429,63 @@ body .caveman {
   bottom: 13%;
   left: 11%;
 }
+
 .caveman-cloth span {
   background-color: #e84325;
   position: absolute;
 }
+
 .caveman-cloth span::after {
   content: "";
   color: #800203;
   position: absolute;
   background-color: currentColor;
 }
+
 .caveman-cloth span:nth-child(1) {
-  height: 4em;
+  height: 4.5em;
   width: 20em;
   transform: rotate(45deg);
   overflow: hidden;
 }
+
 .caveman-cloth span:nth-child(1)::after {
   height: 5em;
   width: 5em;
   border-radius: 50%;
   top: -2em;
   left: -2em;
-  box-shadow: 6.5em -1em 0 1em, 10.8em 0.4em 0 -1.8em;
+  box-shadow: 7em -1em 0 1em, 11em 0.5em 0 -2em;
 }
+
 .caveman-cloth span:nth-child(2) {
-  left: -1.42em;
-  top: 3.8em;
+  left: -1.5em;
+  top: 4em;
   height: 2em;
   width: 20em;
   transform: rotate(45deg) skew(45deg);
 }
+
 .caveman-cloth span:nth-child(2)::after {
   height: 2em;
   width: 2em;
   border-radius: 50%;
   transform: skew(-45deg);
-  left: 1.2em;
-  top: -0.6em;
+  left: 1em;
+  top: -0.5em;
 }
+
 .caveman-cloth span:nth-child(3) {
   left: 1.5em;
   top: 0.5em;
   height: 4em;
   width: 5em;
 }
+
 .caveman-cloth span:nth-child(3)::after {
   height: 5em;
   width: 5em;
   border-radius: 50%;
-  left: 3.3em;
-  bottom: -2.1em;
+  left: 3em;
+  bottom: -2em;
 }
