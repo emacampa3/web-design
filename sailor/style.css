@@ -101,14 +101,14 @@ body .sailor {
 }
 
 .sailor-beard-patterns span {
-  background-color: #5c3c2c;
+  background-color: #573829;
   position: absolute;
   height: 100%;
 }
 
 .sailor-beard-patterns span:nth-child(1) {
-  top: 5.6em;
-  left: 2.6em;
+  top: 8em;
+  left: 10em;
   width: 1.5em;
   height: 0.8em;
   border-radius: 0.8em;
@@ -153,42 +153,44 @@ body .sailor {
   height: 1.7em;
   border-radius: 1.7em;
 }
-/*
+
 .sailor-mustache {
-  width: 50px;
-  height: 50px;
-  left: 4em;
-  top: 3.6em;
-  border-radius: 50%;
+  width: 35px; 
+  height: 35px;
   position: absolute;
-  color: black;
-  box-shadow: 0px 24px 0 0,
-              40px 24px 0 0;
+  top: -20px;
+  border-radius: 50%; 
+  color: #573829;
+  box-shadow: 
+    75px 100px 0 0 currentColor, 
+    110px 100px 0 0 currentColor;
 }
 
- .sailor-mustache::before{
-  content: " ";
+.sailor-mustache::before {
+  content: "";
   position: absolute;
-  top: 10px;
-  left: -20px;
-  width: 30px;
-  height: 20px;
-  border-bottom: solid 50px;
-  border-radius: 0 0 0 100%;
-  transform: rotate(-40deg);
-} 
+  width: 80px;
+  height: 40px;
+  left: 70px; 
+  top: 35px;
+  border-bottom: solid 35px currentColor; 
+  border-radius: 0 0 0 100%; 
+  transform: rotate(-40deg); 
+  transform-origin: right 125px;
+}
 
-.sailor-mustache::after{
-  content: " ";
+.sailor-mustache::after {
+  content: "";
   position: absolute;
+  width: 80px;
+  height: 40px;
   left: 70px;
-  top: -10px;
-  width: 50px;
-  height: 54px;
-  border-bottom: solid 50px;
-  border-radius: 0 0  100% 0;
-  transform: rotate(40deg);
-} */
+  top: 35px;
+  border-bottom: solid 35px currentColor; 
+  border-radius: 0 0 100% 0;
+  transform: rotate(40deg); 
+  transform-origin: left 125px;
+}
 
 .sailor-face {
   position: absolute;
@@ -209,7 +211,7 @@ body .sailor {
   position: absolute;
   bottom: -1.3em;
   height: 1.3em;
-  width: 3.3em;
+  width: 3.1em;
   border-radius: 0 0 1.3em 1.3em;
   background-color: inherit;
 }
@@ -230,7 +232,7 @@ body .sailor {
   position: relative;
   margin-top: 1em;
   width: 4.6em;
-  height: 2em;
+  height: 1.8em;
   border-radius: 2em;
   background-color: #492B1C;
   box-shadow: 0 1em 0 -0.5em #dfa784;
@@ -244,7 +246,7 @@ body .sailor {
   width: 2em;
   height: 1em;
   border-radius: 1em;
-  background-color: #5c3c2c;
+  background-color: #573829;
 }
 
 .sailor-eye::before {
@@ -261,3 +263,75 @@ body .sailor {
 .sailor-eye-right {
   transform: scaleX(-1);
 }
+
+.sailor-ear {
+  position: absolute;
+  top: 3em;
+  left: -2.4em;
+  width: 2.5em;
+  height: 3em;
+  background-color: #f8c09d;
+  border-radius: 2.5em 0 0 2.5em;
+  box-shadow: inset 0 -0.8em #dfa784;
+}
+
+.sailor-ear::after, .sailor-ear::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 8%;
+  width: 1.2em;
+  height: 0.45em;
+  background-color: #c58d69;
+  border-radius: 0.6em;
+}
+
+.sailor-ear::before {
+  transform: rotate(45deg);
+}
+
+.sailor-ear::after {
+  transform: rotate(-45deg);
+}
+
+.sailor-ear-right {
+  transform: scaleX(-1);
+  right: -2.5em;
+  left: unset;
+}
+
+.sailor-ear .earring {
+  position: relative;
+  top: 35px;
+  left: 12px;
+  width: 6px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid rgb(199, 149, 57);
+  box-shadow: inset 0px 20px transparent;
+}
+
+.sailor-neck {
+  position: absolute;
+  left: 50%;
+  bottom: -17em;
+  transform: translateX(-50%);
+  width: 14em;
+  height: 13em;
+  background-color: #dfa784;
+  border-radius: 0 0 12em 12em;
+  z-index: -1;
+}
+
+.sailor-body {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 34em;
+  height: 8em;
+  border-radius: 8em 8em 0 0;
+  background-color: #4167c7;
+  z-index: -1;
+}
+
