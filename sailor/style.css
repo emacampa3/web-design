@@ -12,8 +12,8 @@ body .sailor {
 .sailor {
   position: relative;
   overflow: hidden;
-  width: 40em;
-  height: 40em;
+  width: 35em;
+  height: 35em;
 }
 
 .sailor-head {
@@ -204,7 +204,7 @@ body .sailor {
   position: absolute;
   left: 50%;
   width: 13.5em;
-  height: 18.25em;
+  height: 16em;
   transform: translateX(-50%);
   background-color: #492B1C;
   border-radius: 0 0 13.5em 13.5em;
@@ -425,10 +425,10 @@ body .sailor {
 .sailor-neck {
   position: absolute;
   left: 50%;
-  bottom: -17em;
+  bottom: -15em;
   transform: translateX(-50%);
   width: 14em;
-  height: 13em;
+  height: 11em;
   background-color: #dfa784;
   border-radius: 0 0 12em 12em;
   z-index: -1;
