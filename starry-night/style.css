@@ -1,0 +1,204 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3e3e3;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oval {
+  width: 170px;
+  height: 230px;
+  overflow: hidden;
+  background: linear-gradient(30deg, #2a2031 15%, #293d98 100%);
+  opacity: 1;
+  border-radius: 50%;
+  border: 6px solid #ddd;
+  box-shadow: inset 5px 5px 10px #1c1c1c80, 0px 10px 50px #808080, 10px 10px 30px #808080;
+}
+
+.moon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+  top:25%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 0 white;
+  animation: pulse 7s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.crator {
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  position: relative;
+}
+
+.crator-1 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  box-shadow: inset -1px -1px 3px #585858aa;
+}
+
+.crator-2 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  box-shadow: inset -1px -1px 1px #585858aa;
+}
+
+.crator-3 {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  box-shadow: inset -1px -1px 3px #585858aa;
+}
+
+.planet {
+  width: 10%;
+  height: 10%;
+  background: linear-gradient(60deg, #372c52 40%, #4159c3 100%);
+  border-radius: 100%;
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.shooting-stars {
+  position: absolute;
+  top:-50px;
+  left: -100px;
+  width: 180px;
+  height: 230px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.shooting-star {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  height: 1px;
+  background: linear-gradient(-45deg, #dedede, #dedede00);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px #dedede);
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+.shooting-star:nth-child(1) {
+  top: 140px;
+  left: 10px;
+  animation-delay: 5500ms;
+}
+
+.shooting-star:nth-child(1)::before, .shooting-star:nth-child(1)::after {
+  animation-delay: 5500ms;
+}
+
+.shooting-star:nth-child(2) {
+  top: 100px;
+  left: 0px;
+  animation-delay: 2000ms;
+}
+
+.shooting-star:nth-child(2)::before, .shooting-star:nth-child(2)::after {
+  animation-delay: 2000ms;
+}
+
+.shooting-star:nth-child(3) {
+  top: 40px;
+  left: 10px;
+  animation-delay: 3000ms;
+}
+
+.shooting-star:nth-child(3)::before, .shooting-star:nth-child(3)::after {
+  animation-delay: 3000ms;
+}
+
+.shooting-star:nth-child(4) {
+  top: 70px;
+  left: 80px;
+  animation-delay: 5000ms;
+}
+
+.shooting-star:nth-child(4)::before, .shooting-star:nth-child(4)::after {
+  animation-delay: 5000ms;
+}
+
+.shooting-star:nth-child(5) {
+  top: 90px;
+  left: 10px;
+  animation-delay: 8000ms;
+}
+
+.shooting-star:nth-child(5)::before, .shooting-star:nth-child(5)::after {
+  animation-delay: 8000ms;
+}
+
+.starfield {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(2px 2px at 50px 30px, #eee, rgba(0, 0, 0, 0)), radial-gradient(1px 1px at 40px 75px, #ffffff55, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 100px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffffaa, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 130px 80px, #ffffff55, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 150px 100px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 80px 80px, #eeeeeeaa, rgba(0, 0, 0, 0)), radial-gradient(1px 1px at 90px 75px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 110px 100px, #dddddd55, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 120px 10px, #fff, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 160px 50px, #ffffff55, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 150px 70px, #dddddd55, rgba(0, 0, 0, 0));
+  background-size: contain;
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
