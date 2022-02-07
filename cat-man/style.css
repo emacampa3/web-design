@@ -240,7 +240,7 @@ body {
   bottom: -0.5em;
   left: -2.2em;
   width: 3.5em;
-  height: 6em;
+  height: 5.8em;
   border-radius: 3.5em 3.5em 0 0;
   background-color: #37312e;
   z-index: -10;
@@ -372,7 +372,7 @@ body {
 .second {
   left: unset;
   left: 6em;  
-  height: 4.5em;
+  height: 4.85em;
   z-index: 10;
 }
 
