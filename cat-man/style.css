@@ -3,7 +3,7 @@ body {
   display: grid;
   place-items: center;
   margin: 0;
-  background-color: #e3d5c7;
+  background-color: #f3e8e0;
 }
 
 .character {
@@ -220,7 +220,7 @@ body {
   width: 10em;
   height: 4em;
   border-radius: 3.5em 3.5em 0 0;
-  background-color: #516e8d;
+  background-color: #3b70b5;
   z-index: -3;
 }
 
