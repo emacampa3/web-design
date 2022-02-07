@@ -240,9 +240,10 @@ body {
   bottom: -0.5em;
   left: -2.2em;
   width: 3.5em;
-  height: 5em;
+  height: 6em;
   border-radius: 3.5em 3.5em 0 0;
   background-color: #37312e;
+  z-index: -10;
 }
 
 .cat-patterns {
@@ -370,8 +371,8 @@ body {
 
 .second {
   left: unset;
-  right: -0.5em;
-  height: 6.2em;
-  z-index: -4;
+  left: 6em;  
+  height: 4.5em;
+  z-index: 10;
 }
 
