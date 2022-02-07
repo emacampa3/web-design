@@ -13,6 +13,7 @@ body {
   align-items: center;
   background-color: #a76e59;
 }
+
 body::before {
   content: "";
   position: relative;
@@ -25,6 +26,7 @@ body::before {
   position: absolute;
   background: linear-gradient(#6e8283 8px, #4f5f60 8px, #4f5f60 calc(100% - 8px), #000100 calc(100% - 8px));
 }
+
 .pencil::before {
   content: "";
   position: absolute;
@@ -33,6 +35,7 @@ body::before {
   background-color: #cd9480;
   clip-path: inherit;
 }
+
 .pencil::after {
   content: "";
   position: absolute;
