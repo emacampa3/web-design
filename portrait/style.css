@@ -1,0 +1,17 @@
+body {
+  min-height: calc(100vh - 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff8f4;
+  font-size: 14px;
+}
+
+.background {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50% -50%);
+}
+
