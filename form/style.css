@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
 
 * {
 	box-sizing: border-box;
@@ -34,6 +34,8 @@ p {
 
 span {
   font-size: 12px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -44,14 +46,16 @@ a {
 }
 
 button {
-  border-radius: 20px;
-  border: 1px solid #498797;
   background-color: #498797;
   color: #ffffff;
-  font-size: 12px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid #498797;
   padding: 12px 45px;
-  letter-spacing: 1px;
+  margin-top: 12px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
@@ -65,6 +69,7 @@ button:focus {
 }
 
 button.ghost {
+  margin-top: 0;
   background-color: transparent;
   border-color: #ffffff;
 }
@@ -83,9 +88,15 @@ form {
 input {
   background-color: #eee;
   border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
+  border-radius: 4px;
+  padding: 13px 15px;
+  margin: 6px 0;
   width: 100%;
+}
+
+input::placeholder {
+  color: #a6a6a6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .social-container {
